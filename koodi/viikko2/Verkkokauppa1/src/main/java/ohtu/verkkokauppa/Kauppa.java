@@ -1,14 +1,19 @@
 package ohtu.verkkokauppa;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Kauppa {
 
-    private Varasto varasto;
-    private Pankki pankki;
+    private VarastoRpinta varasto;
+    private PankkiRpinta pankki;
     private Ostoskori ostoskori;
-    private Viitegeneraattori viitegeneraattori;
+    private VgenRpinta viitegeneraattori;
     private String kaupanTili;
 
-    public Kauppa(Varasto v, Pankki p, Viitegeneraattori vgen) {
+    @Autowired
+    public Kauppa(VarastoRpinta v, PankkiRpinta p, VgenRpinta vgen) {
         varasto = v;
         pankki = p;
         viitegeneraattori = vgen;
