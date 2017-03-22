@@ -2,16 +2,16 @@ package ohtu.verkkokauppa;
 
 public class Kauppa {
 
-    private Varasto varasto;
-    private Pankki pankki;
+    private VarastoRpinta varasto;
+    private PankkiRpinta pankki;
     private Ostoskori ostoskori;
-    private Viitegeneraattori viitegeneraattori;
+    private VgenRpinta viitegeneraattori;
     private String kaupanTili;
 
-    public Kauppa() {
-        varasto = Varasto.getInstance();
-        pankki = Pankki.getInstance();
-        viitegeneraattori = Viitegeneraattori.getInstance();
+    public Kauppa(VarastoRpinta v, PankkiRpinta p, VgenRpinta vgen) {
+        varasto = v;
+        pankki = p;
+        viitegeneraattori = vgen;
         kaupanTili = "33333-44455";
     }
 
