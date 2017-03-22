@@ -2,13 +2,13 @@ package ohtu.verkkokauppa;
 
 public class Kauppa {
 
-    private VarastoRpinta varasto;
-    private PankkiRpinta pankki;
+    private Varasto varasto;
+    private Pankki pankki;
     private Ostoskori ostoskori;
-    private VgenRpinta viitegeneraattori;
+    private Viitegeneraattori viitegeneraattori;
     private String kaupanTili;
 
-    public Kauppa(VarastoRpinta v, PankkiRpinta p, VgenRpinta vgen) {
+    public Kauppa(Varasto v, Pankki p, Viitegeneraattori vgen) {
         varasto = v;
         pankki = p;
         viitegeneraattori = vgen;

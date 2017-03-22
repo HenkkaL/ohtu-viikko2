@@ -4,21 +4,12 @@ import java.util.*;
 
 public class Varasto implements VarastoRpinta {
 
-    private static Varasto instanssi;
-
-    public static Varasto getInstance() {
-        if (instanssi == null) {
-            instanssi = new Varasto();
-        }
-
-        return instanssi;
-    }
     
     private KpRpinta kirjanpito;
     private HashMap<Tuote, Integer> saldot;  
     
-    private Varasto() {
-        kirjanpito = Kirjanpito.getInstance();
+    public Varasto(KpRpinta kpito) {
+        kirjanpito = kpito;
         saldot = new HashMap<Tuote, Integer>();
         alustaTuotteet();
     }
