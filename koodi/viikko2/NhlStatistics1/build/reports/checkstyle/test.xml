@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.9">
+<file name="/home/mlyra/ohtu/ohtu-viikko2/koodi/viikko2/NhlStatistics1/src/test/java/ohtuesimerkki/StatisticsTest.java">
+<error line="20" column="54" severity="error" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="20" column="57" severity="error" message="&apos;12&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="21" column="54" severity="error" message="&apos;45&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="21" column="58" severity="error" message="&apos;54&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="22" column="52" severity="error" message="&apos;37&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="22" column="56" severity="error" message="&apos;53&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="23" column="54" severity="error" message="&apos;42&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="23" column="58" severity="error" message="&apos;56&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="24" column="54" severity="error" message="&apos;35&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="24" column="58" severity="error" message="&apos;89&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="60" column="22" severity="error" message="&apos;3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+</checkstyle>

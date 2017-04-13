@@ -1,8 +1,11 @@
+
 apply plugin: 'jacoco'
 
 apply plugin: 'java'
 
 apply plugin: 'application'
+
+apply plugin: 'checkstyle'
 
 jacocoTestReport {
     reports {
