@@ -19,9 +19,11 @@ public class Kauppa {
         ostoskori = new Ostoskori();
     }
 
-    public void poistaKorista(int id) {
-        Tuote t = varasto.haeTuote(id); 
+    public void poistaKorista(int id) {        
+        Tuote t = varasto.haeTuote(id);  
+        ostoskori.poista(t);
         varasto.palautaVarastoon(t);
+        
     }
 
     public void lisaaKoriin(int id) {
