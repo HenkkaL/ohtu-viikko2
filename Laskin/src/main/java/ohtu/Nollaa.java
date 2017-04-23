@@ -13,6 +13,7 @@ import javax.swing.JTextField;
  */
 public class Nollaa implements Komento {
     
+    private int edellinen;
     private Sovelluslogiikka sovellus;
     private JTextField tuloskentta;
     private JTextField syotekentta;
@@ -25,6 +26,10 @@ public class Nollaa implements Komento {
 
     @Override
     public void suorita() {
+        try {
+            edellinen = Integer.parseInt(tuloskentta.getText());
+        } catch (Exception e) {
+        }
         this.sovellus.nollaa();        
         this.tuloskentta.setText("" + this.sovellus.tulos());  
         this.syotekentta.setText("");
@@ -32,7 +37,9 @@ public class Nollaa implements Komento {
 
     @Override
     public void peru() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.tuloskentta.setText("" + this.edellinen);
+        this.syotekentta.setText("");
+        sovellus.aseta(edellinen);
     }
     
 }

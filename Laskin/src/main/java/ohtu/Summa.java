@@ -14,6 +14,7 @@ import javax.swing.JTextField;
 public class Summa implements Komento {
 
     private int luku;
+    private int edellinen;
     private Sovelluslogiikka sovellus;
     private JTextField tuloskentta;
     private JTextField syotekentta;
@@ -27,8 +28,10 @@ public class Summa implements Komento {
 
     @Override
     public void suorita() {
+        luku = 0;
         try {
             luku = Integer.parseInt(syotekentta.getText());
+            edellinen = Integer.parseInt(tuloskentta.getText());
         } catch (Exception e) {
         }
         this.sovellus.plus(this.luku);
@@ -38,7 +41,9 @@ public class Summa implements Komento {
 
     @Override
     public void peru() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.tuloskentta.setText("" + this.edellinen);
+        this.syotekentta.setText("");
+        sovellus.aseta(edellinen);
     }
 
 }
